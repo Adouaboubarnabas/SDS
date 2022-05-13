@@ -37,9 +37,9 @@ if (isset($_POST['seconnecter'])){
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
-    <body class="">
+    <body>
         <div id="">
-            <footer class="py-4 bg-light mt-auto entete">
+            <footer class= "bg-light mt-auto entete">
                 <div class="container-fluid px-4">
                     <div class="d-flex justify-content-between entetelogo">
                         <img src="file.png">
@@ -47,19 +47,17 @@ if (isset($_POST['seconnecter'])){
                 </div>
             </footer>
         </div>
-        <div id="layoutAuthentication">
-
             <div id="layoutAuthentication_content">
-                <main>
+                <main style="margin-bottom :14%; !important; ">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            
+
+                        <div class="row justify-content-center ">
                             <div><p class="nomappli">Application Gestion UFR/SDS</p></div>
                             <div class="col-lg-5">
                                 
-                                <div class="card  border-1 mt-2">
+                                <div class="card  border-1 ">
                                     
-                                    <div class="card-header boiteconnexionsect1"><h3 class="font-weigh my-4">CONNEXION</h3></div>
+                                    <div class="card-header boiteconnexionsect1"><h3 class="font-weigh ">CONNEXION</h3></div>
                                     <div class="card-body boiteconnexionsect2">
                                         <form action="" method="post">
                                             <div class="form-floating mb-2">
@@ -70,7 +68,7 @@ if (isset($_POST['seconnecter'])){
                                                 <input class="form-control" id="inputPassword" type="password" placeholder="Password" name="mdpconnect"/>
                                                 <label for="inputPassword">Mot de Passe</label>
                                             </div>
-                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                            <div class="d-flex align-items-center justify-content-between mt-2 mb-1">
                                                 <input class="btn btn-primary" value="Se connecter" type="submit" name= "seconnecter">
                                                 <?php 
                                                 if(isset($error))
@@ -81,7 +79,7 @@ if (isset($_POST['seconnecter'])){
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="card-footer boiteconnexionsect1 text-center py-3">
+                                    <div class="card-footer boiteconnexionsect1 text-center ">
                                         <div class="small textbuttonfooterconn"><a href="register.php">Aviez vous déja un compte? Incrivez-vous!</a></div>
                                     </div>
                                 </div>
@@ -91,7 +89,7 @@ if (isset($_POST['seconnecter'])){
                 </main>
             </div>
             <div id="layoutAuthentication_footer">
-                <footer class="py-4 bg-light mt-auto piedpage">
+                <footer class="py-3 bg-light mt-auto piedpage">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-center small">
                             <div class="text-muted piedpagetext">Copyright &copy; Université Joseph-Ki Zerbo 2022 Tous Droits Réservés</div>
@@ -99,7 +97,6 @@ if (isset($_POST['seconnecter'])){
                     </div>
                 </footer>
             </div>
-        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>

@@ -2218,7 +2218,7 @@ progress {
   background-color: rgb(255, 255, 255);
   border-color:#ECCFCF;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem #0b5ed7;
+  
 }
 .form-control::-webkit-date-and-time-value, .dataTable-input::-webkit-date-and-time-value {
   height: 1.5em;
@@ -11304,17 +11304,17 @@ textarea.form-control-lg {
 }
 html,
 body {
-  height: 100%;
+   height: 100%;
 }
 
 #layoutAuthentication {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 80vh !important;
 }
 #layoutAuthentication #layoutAuthentication_content {
   min-width: 0;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 #layoutAuthentication #layoutAuthentication_footer {
   min-width: 0;
@@ -11719,7 +11719,7 @@ body {
   background-color: #F9F2FB !important;
 }
 .boiteconnexionsect2 form input{
-  height:55px !important;
+  height:45px !important;
 }
 .boiteconnexionsect1 h3{
   color: #704A4A !important;
@@ -11754,4 +11754,7 @@ body {
 
 .style{
   font-family: roboto;
+}
+html body{
+  background-image:url(sdsphoto.png) !important;
 }

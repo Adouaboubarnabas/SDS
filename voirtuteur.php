@@ -1,6 +1,6 @@
 
-
 <?php   
+require('securite.php') ;
   $bdd =new  mysqli('localhost', 'root', '', 'ufr-sds');
   $id = $_GET['afficheid'];
   $sql = "SELECT * FROM tuteurs  WHERE id_tuteur = '$id'";
@@ -10,13 +10,6 @@
     $prenom= $row['prenom']; 
     $email= $row['email']; 
     $numero= $row['telephone']; 
-   
-  
-    
-
-
-   
-    
     
  ?>
  
@@ -45,7 +38,7 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-md-3 offset-md-4 mt-5">
-            <h2 class="style">Coordonnees tuteur</h2>
+            <h2 class="style" >Coordonnees tuteur</h2>
             </div>
         </div>
         <div class="row py-4">
